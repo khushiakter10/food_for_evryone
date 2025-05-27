@@ -10,6 +10,7 @@ import 'package:provider/provider.dart';
 import 'package:shimmer/main.dart';
 import 'package:training_app/constants/app_constants.dart';
 import 'package:training_app/constants/custome_theme.dart';
+import 'package:training_app/feature/design/presentation_widget/clioval_screen.dart';
 import 'package:training_app/helpers/all_routes.dart';
 import 'package:training_app/helpers/di.dart';
 import 'package:training_app/helpers/helper_methods.dart';
@@ -28,8 +29,7 @@ import 'feature/new_widget/presentation/rictects_screen.dart';
 import 'feature/packeg/presentation/code_gauge_screen.dart';
 import 'feature/packeg/presentation/cupertion_progress_screen.dart';
 import 'feature/packeg/presentation/heroanimation_screen.dart';
-import 'feature/packeg/presentation/multi_circular_slider.dart';
-import 'feature/packeg/presentation/practice.dart';
+
 import 'feature/packeg/presentation/progress_line.dart';
 import 'feature/packeg/presentation/sleek_circular_slider.dart';
 import 'feature/packeg/presentation/step-progress.dart';
@@ -37,7 +37,7 @@ import 'feature/presentation/food/container_screen.dart';
 import 'feature/presentation/food/container_select_unselect.dart';
 import 'feature/presentation/food/container_design.dart';
 import 'feature/presentation/food/file_text_screen.dart';
-import 'feature/presentation/food/goggle_map_screen.dart';
+
 import 'feature/presentation/food/listview_vedo_screen.dart';
 import 'feature/presentation/food/listviewscreen.dart';
 import 'feature/presentation/food/vedio.dart';
@@ -133,7 +133,7 @@ class UtillScreenMobile extends StatelessWidget {
           },
           navigatorKey: NavigationService.navigatorKey,
           // onGenerateRoute: RouteGenerator.generateRoute,
-          home: CarouselSliderTwoScreen(),
+          home: CliovalScreen(),
         );
       },
     );
