@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; // Correct Import
+import 'package:flutter/material.dart';
 
 class CuperTionScreen extends StatefulWidget {
   @override
@@ -6,13 +6,13 @@ class CuperTionScreen extends StatefulWidget {
 }
 
 class _CuperTionScreenState extends State<CuperTionScreen> {
-  double _progressValue = 0.2; // Initial progress value
+  double _progressValue = 0.2;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Cupertino Progress Bar Example"),
+        title: const Text("Cupertino Progress Bar Example"),
       ),
       body: Center(
         child: Column(
@@ -25,21 +25,19 @@ class _CuperTionScreenState extends State<CuperTionScreen> {
             //   color: Colors.blue,
             //   height: 10,
             // ),
-            SizedBox(height: 30),
-            // Button to simulate progress increase
+            const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
                 setState(() {
-                  // Update progress value and loop back to 0 when it reaches 1.0
                   _progressValue = (_progressValue + 0.1).clamp(0.0, 1.0);
                 });
               },
-              child: Text("Increase Progress"),
+              child: const Text("Increase Progress"),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               'Progress: ${(_progressValue * 100).toStringAsFixed(0)}%',
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
           ],
         ),
