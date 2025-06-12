@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class FileTextScreen extends StatefulWidget {
-  const FileTextScreen({super.key});
+class PracticeContainer extends StatefulWidget {
+  const PracticeContainer({super.key});
 
   @override
-  State<FileTextScreen> createState() => _FileTextScreenState();
+  State<PracticeContainer> createState() => _PracticeContainerState();
 }
 
-class _FileTextScreenState extends State<FileTextScreen> {
+class _PracticeContainerState extends State<PracticeContainer> {
   bool _isTextVisible = false; // Control visibility of the texts
   List<String> texts = [
     "First text",

@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../gen/assets.gen.dart';
+
 
 class ListViewvedioScreen extends StatefulWidget {
   const ListViewvedioScreen({super.key});

@@ -1,6 +1,6 @@
  import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:training_app/feature/select_unselect/presentation/custom_design_Widget.dart';
+import 'package:training_app/feature/select_unselect/widget/custom_design_Widget.dart';
 import '../../../gen/assets.gen.dart';
 import '../../../helpers/ui_helpers.dart';
 

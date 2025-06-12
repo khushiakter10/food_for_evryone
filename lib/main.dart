@@ -7,21 +7,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
 import 'package:training_app/constants/app_constants.dart';
-import 'package:training_app/feature/design/presentation_widget/checkbox.dart';
-import 'package:training_app/feature/design/presentation_widget/chexkboxlisttile.dart';
-import 'package:training_app/feature/design/presentation_widget/cross_screen.dart';
-import 'package:training_app/feature/design/presentation_widget/circleavtar.dart';
-import 'package:training_app/feature/design/presentation_widget/clioval_screen.dart';
-import 'package:training_app/feature/design/presentation_widget/clipRect.dart';
-import 'package:training_app/feature/design/presentation_widget/clippath_screen.dart';
-import 'package:training_app/feature/design/presentation_widget/clossbutton.dart';
-import 'package:training_app/feature/design/presentation_widget/container_design_screen.dart';
-import 'package:training_app/feature/new_widget/presentation/textbutoon.dart';
+import 'package:training_app/feature/presentation/food/vedio.dart';
 import 'package:training_app/helpers/di.dart';
 import 'package:training_app/helpers/language.dart';
 import 'package:training_app/helpers/navigation_service.dart';
 import 'package:training_app/helpers/register_provider.dart';
 import 'package:training_app/networks/dio/dio.dart';
+import 'package:training_app/splash_screen.dart';
+
 
 
 
@@ -99,7 +92,7 @@ class UtillScreenMobile extends StatelessWidget {
           },
           navigatorKey: NavigationService.navigatorKey,
           // onGenerateRoute: RouteGenerator.generateRoute,
-          home:    Chexkboxlisttile (),
+          home:    SplashScreen (),
         );
       },
     );

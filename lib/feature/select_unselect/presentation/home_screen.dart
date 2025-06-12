@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:training_app/feature/select_unselect/presentation/customselected-widget.dart';
+import 'package:training_app/feature/select_unselect/widget/customselected-widget.dart';
 import 'package:training_app/gen/colors.gen.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 

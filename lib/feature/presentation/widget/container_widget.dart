@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../helpers/ui_helpers.dart';
 
-class CustomContainer extends StatelessWidget {
+class CustomContainerkk extends StatelessWidget {
   final String? title;
   final String? subtitle;
   final TextStyle? textStyle;
@@ -12,7 +12,7 @@ class CustomContainer extends StatelessWidget {
   final ImageProvider? imagehasi;
   final ImageProvider? imagekhusi;
 
-  const CustomContainer({
+  const CustomContainerkk({
     super.key,
     this.title,
     this.subtitle,

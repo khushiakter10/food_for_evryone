@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
-import 'custom_design_Widget.dart';
+import '../widget/custom_design_Widget.dart';
 
 
 class FoodScreen extends StatefulWidget {
