@@ -1,9 +1,10 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
+import 'package:training_app/feature/select_unselect/presentation/font_screen.dart';
+import 'package:training_app/feature/select_unselect/presentation/home_screen.dart';
 
-import '../feature/select_unselect/presentation/font_screen.dart';
-import '../feature/select_unselect/presentation/home_screen.dart';
-import '../splash_screen.dart';
+
+
 
 final class Routes {
   static final Routes _routes = Routes._internal();

@@ -86,7 +86,7 @@ class _ContainerDesignState extends State<ContainerDesign> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(bdtexts[index], style: TextStyle(fontSize: 12.sp)),
-                              Text("khusbu"),
+                              const Text("khusbu"),
                             ],
                           ),
                         ],

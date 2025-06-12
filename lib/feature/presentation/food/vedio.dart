@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:training_app/gen/assets.gen.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../gen/assets.gen.dart';
+
 
 class VideoPlayerScreen extends StatefulWidget {
   const VideoPlayerScreen({super.key});

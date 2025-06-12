@@ -17,7 +17,7 @@ class _ChexkboxlisttileState extends State<Chexkboxlisttile> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: CheckboxListTile(
-            title: Text("CheckBox"),
+            title: const Text("CheckBox"),
             value: ischeck,
             onChanged: (value) {
               setState(() {
@@ -26,7 +26,7 @@ class _ChexkboxlisttileState extends State<Chexkboxlisttile> {
             },
             tileColor: Colors.grey,
             activeColor: Colors.red,
-            subtitle: Text("khubu"),
+            subtitle: const Text("khubu"),
             shape: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
             ),

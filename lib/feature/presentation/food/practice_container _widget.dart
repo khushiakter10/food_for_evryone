@@ -9,7 +9,7 @@ class PracticeContainer extends StatefulWidget {
 }
 
 class _PracticeContainerState extends State<PracticeContainer> {
-  bool _isTextVisible = false; // Control visibility of the texts
+  bool _isTextVisible = false;
   List<String> texts = [
     "First text",
     "Second text",
@@ -20,7 +20,7 @@ class _PracticeContainerState extends State<PracticeContainer> {
 
   void _toggleTextVisibility() {
     setState(() {
-      _isTextVisible = !_isTextVisible; // Toggle visibility on button click
+      _isTextVisible = !_isTextVisible;
     });
   }
 
@@ -32,18 +32,18 @@ class _PracticeContainerState extends State<PracticeContainer> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(context); // This will handle back button functionality
+            Navigator.pop(context);
           },
         ),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start, // Align the column to top
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(height: 100.h),
             GestureDetector(
-              onTap: _toggleTextVisibility, // Toggle text visibility on click
+              onTap: _toggleTextVisibility,
               child: Container(
                 height: 100.h,
                 width: 100.w,
