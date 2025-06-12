@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart'; // Correct Import
 
-class ProgressBarScreen extends StatefulWidget {
+class CuperTionScreen extends StatefulWidget {
   @override
-  _ProgressBarScreenState createState() => _ProgressBarScreenState();
+  _CuperTionScreenState createState() => _CuperTionScreenState();
 }
 
-class _ProgressBarScreenState extends State<ProgressBarScreen> {
+class _CuperTionScreenState extends State<CuperTionScreen> {
   double _progressValue = 0.2; // Initial progress value
 
   @override

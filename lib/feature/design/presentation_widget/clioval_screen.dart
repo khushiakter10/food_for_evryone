@@ -19,11 +19,12 @@ class _CliovalScreenState extends State<CliovalScreen> {
           UIHelper.verticalSpace(100.h),
           Center(
             child: ClipOval(
-              clipper:  CustomClip(),
+              clipper:  CustomClip(
+              ),
               child: Container(
                 height: 70.h,
                 width: 90.w,
-                color: Colors.blue,
+                color: Colors.red,
               ),
             ),
           )

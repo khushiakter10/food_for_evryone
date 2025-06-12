@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:training_app/gen/assets.gen.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 
-import '../../../gen/assets.gen.dart';
+
 
 class AlartdilogScreen extends StatefulWidget {
   const AlartdilogScreen({super.key});
@@ -29,7 +30,7 @@ class _AlartdilogScreenState extends State<AlartdilogScreen> {
                     children: [
                       Container(
                         height: 200,
-                        padding: EdgeInsets.all(20.0),
+                        padding: const EdgeInsets.all(20.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -60,7 +61,7 @@ class _AlartdilogScreenState extends State<AlartdilogScreen> {
 
                 );
                   });
-            }, child: Text('alartdilog',)),
+            }, child: const Text('alartdilog',)),
           )
         ],
       ),

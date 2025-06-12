@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class CodeGaugeScreen extends StatefulWidget {
   const CodeGaugeScreen({super.key});
 
@@ -7,7 +8,7 @@ class CodeGaugeScreen extends StatefulWidget {
 }
 
 class _CodeGaugeScreenState extends State<CodeGaugeScreen> {
-  double _value = 70;  // Initial value of the gauge
+  double _value = 70;
 
   @override
   Widget build(BuildContext context) {

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 
-class ChipWidget extends StatefulWidget {
-  const ChipWidget({super.key});
+class CrossScreen extends StatefulWidget {
+  const CrossScreen({super.key});
 
   @override
-  State<ChipWidget> createState() => _ChipWidgetState();
+  State<CrossScreen> createState() => _CrossScreenState();
 }
 
-class _ChipWidgetState extends State<ChipWidget> {
+class _CrossScreenState extends State<CrossScreen> {
   bool isSelected = false;
   @override
   Widget build(BuildContext context) {

@@ -19,8 +19,8 @@ class _CustompaintScreenState extends State<CustompaintScreen> {
           UIHelper.verticalSpace(200.h),
           Center(
             child: CustomPaint(
-              child: Text("khusbu"),
               painter: DemoPainter(),
+              child: const Text("khusbu"),
             ),
           )
         ],

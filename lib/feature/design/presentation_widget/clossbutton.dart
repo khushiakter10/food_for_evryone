@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:training_app/gen/assets.gen.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 
-import '../../../gen/assets.gen.dart';
+
+
+
 
 class CloseButtonExample extends StatefulWidget {
   const CloseButtonExample({super.key});
@@ -23,13 +26,12 @@ class _CloseButtonExampleState extends State<CloseButtonExample> {
           Center(
             child: CloseButton(
               onPressed: () {
-                // Handle the close action
-                print('Close button clicked!');
               },
               color: Colors.orange,
             ),
           ),
           UIHelper.verticalSpace(20.h),
+
           ColoredBox(color:  Colors.red,
             child: Container(
               height: 100.h,

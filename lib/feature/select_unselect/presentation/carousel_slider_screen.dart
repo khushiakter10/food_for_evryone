@@ -2,9 +2,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:training_app/gen/colors.gen.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 
-import '../../../gen/colors.gen.dart';
 class CarouselSliderScreen extends StatefulWidget {
   const CarouselSliderScreen({super.key});
 
@@ -25,7 +25,6 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
         padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 15.w),
         child: Column(
           children: [
-            // Use CarouselSlider from carousel_slider 5.0.0
             CarouselSlider(
               items: misti.map((imageUrl) {
                 return Stack(
@@ -40,12 +39,11 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                       ),
                     ),
                     Positioned(
-                      bottom: 20.h, // Adjust text position from bottom
-                      left: 20.w, // Adjust text position from left
-                      child: Text(
-                        'Sample Text', // Text to display
-                        style: TextStyle(
-                          fontSize: 18.sp, // Responsive font size
+                      bottom: 20.h,
+                      left: 20.w,
+                      child: Text('Sample Text',style: TextStyle(
+
+                          fontSize: 18.sp,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
@@ -53,7 +51,7 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                     ),
                   ],
                 );
-              }).toList(), // Convert the map result to List<Widget>
+              }).toList(),
               options: CarouselOptions(
                 height: 200.h,
                 aspectRatio: 16 / 9,
@@ -86,8 +84,7 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                       Container(
                         height: 150,
                         width: 200,
-                        // height: 120.h,
-                        // width: double.infinity,
+
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8.r),
                           image: DecorationImage(
@@ -98,7 +95,6 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                       ),
                       Expanded(
                         child: Container(
-                          // height: 140,
                           width: 200,
                           decoration: BoxDecoration(
                             color:  AppColors.borderColor,
@@ -115,13 +111,14 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                                   style: TextStyle(
                                     fontSize: 15.sp,
                                     fontWeight: FontWeight.bold,
+                                    color: Colors.white
                                   ),
                                 ),
                                 Text(
                                   text[index],
                                   style: TextStyle(
                                     fontSize: 10.sp,
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
                                 ),
                               ],
@@ -134,7 +131,6 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                 );
               },
             ),
-
           ],
         ),
       ),

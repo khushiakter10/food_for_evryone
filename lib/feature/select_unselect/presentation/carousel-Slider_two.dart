@@ -1,8 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:training_app/gen/colors.gen.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
-import '../../../gen/colors.gen.dart';
+
 
 class CarouselSliderTwoScreen extends StatefulWidget {
   const CarouselSliderTwoScreen({super.key});

@@ -1,4 +1,3 @@
-// ignore_for_file: deprecated_member_use, unused_import, prefer_const_constructors
 
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
@@ -7,57 +6,24 @@ import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
-import 'package:shimmer/main.dart';
 import 'package:training_app/constants/app_constants.dart';
-import 'package:training_app/constants/custome_theme.dart';
+import 'package:training_app/feature/design/presentation_widget/checkbox.dart';
+import 'package:training_app/feature/design/presentation_widget/chexkboxlisttile.dart';
+import 'package:training_app/feature/design/presentation_widget/cross_screen.dart';
+import 'package:training_app/feature/design/presentation_widget/circleavtar.dart';
 import 'package:training_app/feature/design/presentation_widget/clioval_screen.dart';
-import 'package:training_app/helpers/all_routes.dart';
+import 'package:training_app/feature/design/presentation_widget/clipRect.dart';
+import 'package:training_app/feature/design/presentation_widget/clippath_screen.dart';
+import 'package:training_app/feature/design/presentation_widget/clossbutton.dart';
+import 'package:training_app/feature/design/presentation_widget/container_design_screen.dart';
+import 'package:training_app/feature/new_widget/presentation/textbutoon.dart';
 import 'package:training_app/helpers/di.dart';
-import 'package:training_app/helpers/helper_methods.dart';
 import 'package:training_app/helpers/language.dart';
 import 'package:training_app/helpers/navigation_service.dart';
 import 'package:training_app/helpers/register_provider.dart';
-import 'package:training_app/loading_screen.dart';
 import 'package:training_app/networks/dio/dio.dart';
-import 'package:training_app/splash_screen.dart';
-import 'button_navigation_bar/button_navigation_bar.dart';
-import 'feature/auth/presntation/log_in_screen.dart';
-import 'feature/new_widget/presentation/alartdilog_screen.dart';
-import 'feature/new_widget/presentation/cliprrect_screen.dart';
-import 'feature/new_widget/presentation/drware_screen.dart';
-import 'feature/new_widget/presentation/rictects_screen.dart';
-import 'feature/packeg/presentation/code_gauge_screen.dart';
-import 'feature/packeg/presentation/cupertion_progress_screen.dart';
-import 'feature/packeg/presentation/heroanimation_screen.dart';
 
-import 'feature/packeg/presentation/progress_line.dart';
-import 'feature/packeg/presentation/sleek_circular_slider.dart';
-import 'feature/packeg/presentation/step-progress.dart';
-import 'feature/presentation/food/container_screen.dart';
-import 'feature/presentation/food/container_select_unselect.dart';
-import 'feature/presentation/food/container_design.dart';
-import 'feature/presentation/food/file_text_screen.dart';
 
-import 'feature/presentation/food/listview_vedo_screen.dart';
-import 'feature/presentation/food/listviewscreen.dart';
-import 'feature/presentation/food/vedio.dart';
-import 'feature/select_unselect/presentation/carousel-Slider_two.dart';
-import 'feature/select_unselect/presentation/carousel_slider_screen.dart';
-import 'feature/select_unselect/presentation/circular_progsstwo.dart';
-import 'feature/select_unselect/presentation/circular_proress.dart';
-import 'feature/select_unselect/presentation/calender_date_screen.dart';
-import 'feature/select_unselect/presentation/drop_dwon_button.dart';
-import 'feature/select_unselect/presentation/font_screen.dart';
-import 'feature/select_unselect/presentation/food_screen.dart';
-import 'feature/select_unselect/presentation/home_screen.dart';
-import 'feature/select_unselect/presentation/listview_spared_screen.dart';
-import 'feature/select_unselect/presentation/muve_screen.dart';
-import 'feature/select_unselect/presentation/popup_menu_screen.dart';
-import 'feature/select_unselect/presentation/practice.dart';
-import 'feature/select_unselect/presentation/select_screen.dart';
-import 'feature/select_unselect/presentation/spainer_screen.dart';
-import 'feature/select_unselect/presentation/stack_screen.dart';
-import 'feature/select_unselect/presentation/tab_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -111,7 +77,7 @@ class UtillScreenMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String language = appData.read(kKeyLanguage) ?? 'en'; // Default language
+    String language = appData.read(kKeyLanguage) ?? 'en';
     String countryCode =
         appData.read(kKeyCountryCode) ?? 'US';
     return ScreenUtilInit(
@@ -133,7 +99,7 @@ class UtillScreenMobile extends StatelessWidget {
           },
           navigatorKey: NavigationService.navigatorKey,
           // onGenerateRoute: RouteGenerator.generateRoute,
-          home: CliovalScreen(),
+          home:    Chexkboxlisttile (),
         );
       },
     );

@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';  // Import the package
 
 
-class CircularSliderScreen extends StatefulWidget {
+class SelectCurcular extends StatefulWidget {
+  const SelectCurcular({super.key});
+
   @override
-  _CircularSliderScreenState createState() => _CircularSliderScreenState();
+  _SelectCurcularState createState() => _SelectCurcularState();
 }
 
-class _CircularSliderScreenState extends State<CircularSliderScreen> {
+class _SelectCurcularState extends State<SelectCurcular> {
   double _sliderValue = 50;  // Initial value of the slider
 
   @override

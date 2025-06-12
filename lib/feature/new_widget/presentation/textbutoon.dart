@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:training_app/helpers/ui_helpers.dart';
 
 class TextButtonExample extends StatefulWidget {
   const TextButtonExample({super.key});
@@ -14,6 +15,7 @@ class _TextButtonExampleState extends State<TextButtonExample> {
       body:
           Column(
             children: [
+              UIHelper.verticalSpace(50),
               Center(
                 child: TextButton(
                   style: ButtonStyle(
