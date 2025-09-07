@@ -49,17 +49,15 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
               UIHelper.verticalSpace(25.h),
-              Image(
-                image: AssetImage(Assets.images.foodForEveryone.path),
+              Image(image: AssetImage(Assets.images.foodForEveryone.path),
                 height: 100.h,
               ),
               UIHelper.verticalSpace(430.h),
+
               customeButton(
                 borderColor: Colors.transparent,
                   name: "Get starteed",
-                  onCallBack: (){
-                  NavigationService.navigateTo(Routes.fontScreen);
-                  },
+                  onCallBack: (){NavigationService.navigateTo(Routes.fontScreen);},
                   height: 55.h,
                   minWidth:300.w,
                   borderRadius: 30.r,

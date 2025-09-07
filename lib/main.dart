@@ -7,6 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
 import 'package:training_app/constants/app_constants.dart';
+import 'package:training_app/feature/select_unselect/presentation/buttonNavigate.dart';
 import 'package:training_app/feature/select_unselect/presentation/font_screen.dart';
 import 'package:training_app/helpers/di.dart';
 import 'package:training_app/helpers/language.dart';
@@ -93,7 +94,8 @@ class UtillScreenMobile extends StatelessWidget {
           },
           navigatorKey: NavigationService.navigatorKey,
           // onGenerateRoute: RouteGenerator.generateRoute,
-          home:    FontScreen (),
+
+          home:    ScaffoldWithCustomNavbar (),
         );
       },
     );

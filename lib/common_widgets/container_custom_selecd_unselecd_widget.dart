@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:training_app/gen/colors.gen.dart';
 
-import '../gen/colors.gen.dart';
 
 class CustomContainerTextWidget extends StatelessWidget {
   final String title;
